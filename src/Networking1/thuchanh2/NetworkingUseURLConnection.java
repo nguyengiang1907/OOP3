@@ -1,4 +1,4 @@
-package thuchanh2;
+package Networking2.thuchanh2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

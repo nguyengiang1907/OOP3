@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) throws IOException {
-        String serverIp = "127.0.0.1";
-        int serverPort = 1907;
+        String serverIp = "192.168.32.255";
+        int serverPort = 9999;
 
         DatagramSocket clientSocket = new DatagramSocket();
         while (true){
@@ -29,9 +29,5 @@ public class Client {
             String dataReceive = new String(datagramPacket.getData(),0, datagramPacket.getLength());
             System.out.println("Kết quả : "+dataReceive);
         }
-
-
-
-
     }
 }
